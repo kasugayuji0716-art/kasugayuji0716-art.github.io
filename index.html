@@ -105,6 +105,24 @@
       letter-spacing: 0.05em;
     }
 
+    .works-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .work-item p {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 10px;
+      letter-spacing: 0.03em;
+    }
+
+    .work-item video {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #f0f0f0;
+    }
+
     footer {
       text-align: center;
       padding: 48px 24px;
@@ -131,6 +149,18 @@
     <section>
       <h2>About</h2>
       <p>大学生です。プログラミングや技術に興味を持ち、日々学習しています。</p>
+    </section>
+
+    <section>
+      <h2>Works</h2>
+      <div class="works-grid">
+        <div class="work-item">
+          <video controls>
+            <source src="works/OCプレゼン.mp4" type="video/mp4">
+          </video>
+          <p>OCプレゼン</p>
+        </div>
+      </div>
     </section>
 
     <section>
